@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIROS</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="index.js" defer></script>
+</head>
+<body onload="lerJson()">
+    <table class="table">
+        <div id = vencedor class="estilo"></div>
+        <thead >
+            <tr>
+                <th>Nome</th>
+                <th>Tempo</th>
+                <th>Cidade</th>
+                <th>Telefone</th>
+                <th>AÇÃO</A></th>
+            </tr>
+            <tr>
+                <th><input id = "nome" type="text" placeholder="Fulana da Silva"></th>
+                <th><input id = "tempo" type="text" placeholder="9:59.9"></th>
+                <th><input id = "cidade" type="text" placeholder="Baixo Guandu ES"></th>
+                <th><input id = "telefone" type="text" placeholder="28 99988-7766"></th>
+                <th><button type="button" onclick="salvar()">SALVAR</button></th>
+            </tr>
+        </thead>
+        <tbody id = usuarios></tbody>
+    </table>
+
+</body>
+</html>
