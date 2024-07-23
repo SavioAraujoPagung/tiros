@@ -1,0 +1,5 @@
+
+- deletado: [Id: 11, Nome: TE, Tempo: 34, Cidade: , Telefone: ], horario: 2024-07-19 15:09:25.8700119 -0300 -03 m=+8.947681801
++ salvo: [Id: 12, Nome: , Tempo: 23, Cidade: , Telefone: ], horario: 2024-07-19 15:12:04.6208401 -0300 -03 m=+31.479210501
+- deletado: [Id: 12, Nome: , Tempo: 23, Cidade: , Telefone: ], horario: 2024-07-19 15:12:26.9333502 -0300 -03 m=+53.791720601
+- deletado: [Id: 11, Nome: , Tempo: 43, Cidade: , Telefone: ], horario: 2024-07-19 15:12:28.2872659 -0300 -03 m=+55.145636301

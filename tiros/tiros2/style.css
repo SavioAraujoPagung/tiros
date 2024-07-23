@@ -1,0 +1,98 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    background-color: rgba(5, 53, 4, 0.692);
+    font-size:large;
+}
+
+h1, h2 {
+    color: azure;
+    font-size: xxx-large;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(69, 101, 13);
+}
+
+td, th {
+    text-align: left;
+    padding: 8px;
+    border-radius: 10px;
+    color: azure;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.letra {
+    font-size: xxx-large;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(69, 101, 13);
+}
+
+.imagemBKP{
+    content: "";
+    background-image: url('./mamutesopc.jpeg');
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    z-index: -1;
+    display: table-row-group;
+    vertical-align: middle;
+    unicode-bidi: isolate;
+    border-color: inherit;
+}
+
+.imagem{
+    content: "";
+    background-image: url('./mamutes.jpeg');
+    background-position: center;
+    z-index: -1;
+    display: table-row-group;
+    vertical-align: middle;
+    unicode-bidi: isolate;
+    border-color: inherit;
+}
+
+.image::before {
+    content: "";
+    background-image: url('./mamutes.jpeg');
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.estilo {
+    background-color: rgba(7, 51, 5, 0.39);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    font-size: xxx-large;
+    font-family: sans-serif;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(69, 101, 13);
+}
+
+input {
+    text-transform:uppercase;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(69, 101, 13);
+}
+
+button {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(69, 101, 13);
+}

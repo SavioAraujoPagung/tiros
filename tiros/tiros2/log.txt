@@ -1,0 +1,15 @@
+HISTORICO:
+- deletado: [Id: 11, Nome: , Tempo: 43, Cidade: , Telefone: ], horario: 2024-07-19 15:14:56.5458881 -0300 -03 m=+10.058141001
++ salvo: [Id: 12, Nome: , Tempo: 44, Cidade: , Telefone: ], horario: 2024-07-19 15:16:05.4093171 -0300 -03 m=+78.921570001
+- deletado: [Id: 11, Nome: , Tempo: 43, Cidade: , Telefone: ], horario: 2024-07-19 15:16:50.8985849 -0300 -03 m=+4.959802501
+- deletado: [Id: 12, Nome: , Tempo: 44, Cidade: , Telefone: ], horario: 2024-07-19 15:16:53.3867981 -0300 -03 m=+7.448015701
+- deletado: [Id: 11, Nome: 555, Tempo: 55, Cidade: , Telefone: ], horario: 2024-07-19 17:22:16.6752846 -0300 -03 m=+21.664232001
++ salvo: [Id: 12, Nome: , Tempo: 1:30, Cidade: BG, Telefone: 545], horario: 2024-07-19 20:15:23.5799862 -0300 -03 m=+10408.568933701
++ salvo: [Id: 13, Nome: SAVIO, Tempo: 1:30.5, Cidade: BG, Telefone: 4343], horario: 2024-07-19 20:15:44.8982047 -0300 -03 m=+10429.887152201
++ salvo: [Id: 14, Nome: KASIA, Tempo: 1:0, Cidade: CC, Telefone: 6565], horario: 2024-07-19 20:16:02.9367982 -0300 -03 m=+10447.925745701
++ salvo: [Id: 15, Nome: ERICKSON, Tempo: 40, Cidade: CC, Telefone: 121], horario: 2024-07-19 20:16:27.176194 -0300 -03 m=+10472.165141501
+- deletado: [Id: 14, Nome: KASIA, Tempo: 1:0, Cidade: CC, Telefone: 6565], horario: 2024-07-19 20:16:39.0945578 -0300 -03 m=+10484.083505301
+- deletado: [Id: 12, Nome: , Tempo: 1:30, Cidade: BG, Telefone: 545], horario: 2024-07-19 20:16:41.4578501 -0300 -03 m=+10486.446797601
++ salvo: [Id: 16, Nome: TEST, Tempo: 777, Cidade: CDC, Telefone: 434], horario: 2024-07-19 20:17:02.6356656 -0300 -03 m=+10507.624613101
++ salvo: [Id: 17, Nome: MINUTO, Tempo: 61, Cidade: VC, Telefone: 4343], horario: 2024-07-19 20:17:30.1543884 -0300 -03 m=+10535.143335901
+- deletado: [Id: 15, Nome: ERICKSON, Tempo: 40, Cidade: CC, Telefone: 121], horario: 2024-07-19 20:17:36.725203 -0300 -03 m=+10541.714150501

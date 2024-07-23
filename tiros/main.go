@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bufio"
 	"encoding/json"
 	"fmt"
 	"math"
@@ -8,6 +9,7 @@ import (
 	"os"
 	"strconv"
 	"strings"
+	"time"
 )
 
 const diretorio = "./dados.json"
@@ -23,6 +25,12 @@ type registro struct {
 	TempoStr string `json:"tempoStr"`
 	Cidade   string `json:"cidade"`
 	Telefone string `json:"telefone"`
+}
+
+type logger string
+
+func (r registro) toString() string {
+	return fmt.Sprintf("[Id: %d, Nome: %s, Tempo: %s, Cidade: %s, Telefone: %s]", r.Id, r.Nome, r.Tempo, r.Cidade, r.Telefone)
 }
 
 func main() {
@@ -75,6 +83,7 @@ func deletar(id int) {
 	for i := 0; i < tam; i++ {
 		if !found {
 			if registros[i].Id == id {
+				log(fmt.Sprintf("- deletado: %s, horario: %v", registros[i].toString(), time.Now()))
 				found = true
 				continue
 			}
@@ -142,7 +151,7 @@ func contatenar(r registro) []registro {
 	if !found {
 		novosregistros = append(novosregistros, r)
 	}
-
+	log(fmt.Sprintf("+ salvo: %s, horario: %v", r.toString(), time.Now()))
 	return novosregistros
 }
 
@@ -157,6 +166,10 @@ func tempo(tempo string) (float64, string) {
 
 	if tam == 1 {
 		segundos, _ = strconv.ParseFloat(tempos[0], 64)
+		if segundos < 60 {
+			return segundos, fmt.Sprintf("%.2fs", segundos)
+		}
+
 		min := segundos / 60
 
 		resto := int(segundos) % 60
@@ -179,7 +192,34 @@ func salvar(rs []registro) {
 	json, _ := json.Marshal(u)
 
 	file, _ := os.Create(diretorio)
+	defer file.Close()
+
 	file.Write(json)
+}
+
+func log(msg string) {
+	fmt.Println(msg)
+	file, _ := os.OpenFile("./log.txt", os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0644)
+	ll := ""
+
+	defer file.Close()
+
+	scanner := bufio.NewScanner(file)
+	for scanner.Scan() {
+		// Imprimir cada linha do arquivo
+		ll = fmt.Sprintf("%s", scanner.Text())
+	}
+
+	// Verificar se houve algum erro durante a leitura
+	if err := scanner.Err(); err != nil {
+		fmt.Println("Erro durante a leitura do arquivo:", err)
+	}
+
+	b := []byte(fmt.Sprintf("%s\n%s", ll, msg))
+	_, err := file.Write(b) 
+	if err != nil {
+		fmt.Println(err)
+	}
 
 	file.Close()
 }
